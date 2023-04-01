@@ -1,0 +1,144 @@
+:root {
+	--color-white: #f3f3f3;
+	--color-darkblue: #1b1b32;
+	--color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+	--color-green: #37af65;
+}
+
+* {
+	font-family: "Lato", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 2rem 0;
+	background: linear-gradient(
+			-90deg,
+			rgba(58, 58, 158, 0.8),
+			rgba(136, 136, 206, 0.5)
+		),
+		url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+@media (max-width: 800px) {
+	body {
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	}
+}
+
+h1,
+p {
+	text-align: center;
+	color: white;
+}
+
+header {
+	width: 100%;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+h1[id="title"] {
+	font-weight: 500;
+	margin-bottom: 9px;
+	font-size: 2rem;
+}
+
+p[id="description"] {
+	font-style: italic;
+	font-size: 1.3rem;
+	font-weight: 100;
+	margin: 0 auto;
+	max-width: 90%;
+}
+
+form {
+	max-width: 640px;
+	margin: 2.3rem auto;
+	background-color: var(--color-darkblue-alpha);
+	border-radius: 3px;
+	padding: 3rem 2.5rem;
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+}
+
+.labels {
+	display: block;
+	font-size: 1.2rem;
+	color: white;
+	margin-bottom: 1.5rem;
+}
+
+.optional {
+	font-size: 1rem;
+}
+
+.inputs {
+	font-size: 1.1rem;
+	padding-inline: 0.7rem;
+	width: 100% !important;
+	border: none;
+	display: block;
+	border-radius: 4px;
+	margin: 0.6rem 0;
+	min-height: 2.1rem;
+	transition: 0.2s;
+	color: rgb(68, 68, 68);
+}
+
+.inputs:focus {
+	outline: none;
+	box-shadow: 0px 0px 3px 3px blue;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	vertical-align: middle;
+	border: 0px;
+	width: 3.5%;
+	height: 2em;
+}
+
+.sub-label {
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+	display: block;
+	font-size: 1.2rem;
+	color: white;
+}
+
+select {
+	width: 100% !important;
+}
+
+textarea {
+	transition: 0s !important;
+	resize: vertical;
+	width: 96.5% !important;
+}
+
+#submit {
+	font-size: 1rem;
+	padding: 0.7rem 0;
+	border-radius: 0;
+	background-color: var(--color-green);
+	color: white;
+}
