@@ -54,17 +54,17 @@ header {
 }
 
 h1[id="title"] {
-	font-weight: 500;
-	margin-bottom: 9px;
+	font-weight: 450;
+	margin-bottom: 8px;
 	font-size: 2rem;
 }
 
 p[id="description"] {
 	font-style: italic;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	font-weight: 100;
 	margin: 0 auto;
-	max-width: 90%;
+	max-width: 85%;
 }
 
 form {
